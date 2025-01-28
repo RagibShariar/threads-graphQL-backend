@@ -1,4 +1,4 @@
 - install typescript, express, apolloGraphQL
 - use @types/express@4.17.21
-- setup prisma and postgresql
+- setup prisma, prisma client and postgresql
 - 
