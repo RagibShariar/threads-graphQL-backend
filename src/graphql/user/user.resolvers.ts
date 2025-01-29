@@ -1,15 +1,10 @@
+import userService, { TSignupPayload } from "../../services/user.service";
+
 const queries = {};
 const mutations = {
-  signUp: async (
-    _: any,
-    {
-      firstName,
-      lastName,
-      email,
-      password,
-    }: { firstName: string; lastName: string; email: string; password: string }
-  ) => {
-    return "success";
+  signUp: async (_: any, payload: TSignupPayload) => {
+    const res = await userService.signup(payload);
+    return res;
   },
 };
 
